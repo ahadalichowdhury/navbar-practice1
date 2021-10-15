@@ -18,7 +18,7 @@ import Demo from "./Components/Pages/Demo"
 
 function App() {
   return (
-    <div className="App">
+    <div className="app">
      <Router>
        <Navbar/>
        <Switch>

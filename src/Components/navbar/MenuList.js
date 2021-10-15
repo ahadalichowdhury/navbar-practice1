@@ -1,4 +1,4 @@
-import const menuList =[
+export const MenuList =[
     {
         title: "home",
         url:  "/",

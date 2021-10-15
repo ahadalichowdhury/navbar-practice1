@@ -1,0 +1,117 @@
+.navbar{
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 99;
+
+
+}
+.logo{
+    color: tomato;
+    font-weight: 600px;
+    font-size: 25px;
+
+}
+.logo font{
+    color: #fff;
+}
+
+.fas{
+    cursor: pointer;
+}
+
+.menuList .fa-times{
+    transform: rotate(360deg);
+    transition: all 0.2s ease-in-out;
+}
+.menuList .fa-bars{
+    transform: rotate(180deg);
+    transition: all 0.2s ease-in-out;
+}
+
+.menuList{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    text-decoration-style: none;
+    list-style-type: none;
+}
+
+.menuList li a{
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-weight: 300;
+    border-radius: 25px;
+}
+
+.menuList li:last-child a{
+    background-color: teal;
+    margin: 25px;
+    padding: 5px 10px;
+
+}
+.menuIcon{
+    display: none;
+}
+
+.menuList li a:hover{
+    background-color:red;
+    color:white;
+    border-radius: 25px;
+    transition: all 0.5s ease-in-out;
+
+}
+
+@media screen and (max-width:800px){
+    .logo{
+        font-weight: 15px;
+    }
+    .menuList li a{
+        margin-left: px;
+        font-size: 14px;
+    }
+    .menuList li:last-child a{
+        font-weight: 200;
+        margin: 0;
+        padding: 10px;
+    }
+
+}
+@media screen and (max-width:600px){
+    .menuIcon{
+        display: block;
+
+    }
+    .menuList {
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.7);
+        padding: 20px;
+        right: 0;
+        top: 64px;
+        transition: all 0.5s ease-in-out;
+
+        
+    }
+    .menuList li{
+        margin-bottom: 20px;
+        width: 100%;
+        text-align: center ;
+        list-style-type: none;
+    }
+    
+    .menuList li:last-child{
+        margin-bottom: 5px;
+    }
+    .menuList.close{
+        right:-100%;
+        transition: all 0.5s ease-in-out;
+
+    }
+}
